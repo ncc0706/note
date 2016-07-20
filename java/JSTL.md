@@ -41,7 +41,12 @@ JSTL支持通用的、结构化的任务，比如迭代，条件判断，XML文�
 |\<c:choose>|本身只当做\<c:when>和\<c:otherwise>的父标签|
 |\<c:when>|\<c:choose>的子标签，用来判断条件是否成立|
 |\<c:otherwise>|\<c:choose>的子标签，接在\<c:when>标签后，当\<c:when>标签判断为false时被执行|
-
+|\<c:import>|检索一个绝对或相对 URL，然后将其内容暴露给页面|
+|\<c:forEach>|基础迭代标签，接受多种集合类型|
+|\<c:forTokens>|根据指定的分隔符来分隔内容并迭代输出|
+|\<c:param>|用来给包含或重定向的页面传递参数|
+|\<c:redirect>|重定向至一个新的URL.|
+|\<c:url>|使用可选的查询参数来创造一个URL|
 
 
 
