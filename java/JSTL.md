@@ -8,5 +8,35 @@ JSTL支持通用的、结构化的任务，比如迭代，条件判断，XML文�
 
 根据JSTL标签所提供的功能，可以将其分为5个类别。
 
+* 核心标签
+* 格式化标签
+* SQL 标签
+* XML 标签
+* JSTL 函数
+
+
+## JSTL 库安装
+不同的JAVAEE 对应的jstl版本不同**[maven依赖](http://www.mvnrepository.com/artifact/javax.servlet/jstl)**
+``` xml
+<dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>jstl</artifactId>
+    <version>1.2</version>
+</dependency>
+
+```
+## 核心标签
+
+核心标签是最常用的JSTL标签。引用核心标签库的语法如下：
+
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
+| 标签	| 描述	|
+|:------|-------|
+|<c:out>|用于在JSP中显示数据，就像<%= ... >|
+
+
+
+
 
 
