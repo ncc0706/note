@@ -38,8 +38,9 @@ JSTL支持通用的、结构化的任务，比如迭代，条件判断，XML文�
 |\<c:remove>|用于删除数据	|
 |\<c:catch>|用来处理产生错误的异常状况，并且将错误信息储存起来|
 |\<c:if>|与我们在一般程序中用的if一样|
-|\<c:choose>|本身只当做<c:when>和<c:otherwise>的父标签|
+|\<c:choose>|本身只当做\<c:when>和\<c:otherwise>的父标签|
 |\<c:when>|\<c:choose>的子标签，用来判断条件是否成立|
+|\<c:otherwise>|\<c:choose>的子标签，接在\<c:when>标签后，当\<c:when>标签判断为false时被执行|
 
 
 
