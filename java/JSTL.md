@@ -55,10 +55,21 @@ JSTL包含一系列标准函数，大部分是通用的字符串处理函数。�
 
 | 标签	| 描述	| 举例说明|
 |:------|-------|----------|
-|fn:contains()|测试输入的字符串是否包含指定的子串|\<c:if test="${fn:contains(name, searchString)}">|
-|fn:containsIgnoreCase()|测试输入的字符串是否包含指定的子串，大小写不敏感|\<c:if test="${fn:containsIgnoreCase(name, searchString)}">|
-|fn:endsWith()|测试输入的字符串是否以指定的后缀结尾|\<c:if test="${fn:endsWith(filename, '.txt')}">|
-
+|fn:contains(string, substring)|测试输入的字符串是否包含指定的子串|\<c:if test="${fn:contains(name, searchString)}">|
+|fn:containsIgnoreCase(string, substring)|测试输入的字符串是否包含指定的子串，大小写不敏感|\<c:if test="${fn:containsIgnoreCase(name, searchString)}">|
+|fn:endsWith(string, suffix)|测试输入的字符串是否以指定的后缀结尾|\<c:if test="${fn:endsWith(filename, '.txt')}">|
+|fn:escapeXml(string)|把一些字符转成XML表示，例如\<字符应该转为&lt;|${fn:escapeXml(param:info)}|
+|fn:indexOf(string, substring)|子字符串在母字符串中出现的位置|${fn:indexOf(name, '-')}|
+|fn:join(array, separator)|将数组中的数据联合成一个新字符串，并使用指定字符格开|${fn:join(array, ';')}|
+|fn:length(item)|获取字符串的长度，或者数组的大小|${fn:length(shoppingCart.products)}|
+|fn:replace(string, before, after)|替换字符串中指定的字符|${fn:replace(text, '-','•')}|
+|fn:split(string, separator)|把字符串按照指定字符切分|${fn:split(customerNames, ';')}|
+|fn:startsWith(string, prefix)|判断字符串是否以某个子串开始|\<c:if test="${fn:startsWith(product.id, '100-')}">|
+|fn:substring(string, begin, end)|获取从某个字符所在位置开始的子串|${fn:substringAfter(zip, '-')}
+|fn:substringBefore(string, substring)|获取从开始到某个字符所在位置的子串|${fn:substringBefore(zip, '-')}|
+|fn:toLowerCase(string)|	转为小写|${fn.toLowerCase(product.name)}|
+|fn:toUpperCase(string)|	转为大写字符|${fn.UpperCase(product.name)}|
+|fn:trim(string)|去除字符串前后的空格|${fn.trim(name)}
 
 
 
