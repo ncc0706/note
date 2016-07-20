@@ -48,6 +48,17 @@ JSTL支持通用的、结构化的任务，比如迭代，条件判断，XML文�
 |\<c:redirect>|重定向至一个新的URL.|
 |\<c:url>|使用可选的查询参数来创造一个URL|
 
+## JSTL函数
+JSTL包含一系列标准函数，大部分是通用的字符串处理函数。引用JSTL函数库的语法如下：
+
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+
+| 标签	| 描述	| 举例说明|
+|:------|-------|----------|
+|fn:contains()|测试输入的字符串是否包含指定的子串|\<c:if test="${fn:contains(name, searchString)}">|
+|fn:containsIgnoreCase()|测试输入的字符串是否包含指定的子串，大小写不敏感|\<c:if test="${fn:containsIgnoreCase(name, searchString)}">|
+|fn:endsWith()|测试输入的字符串是否以指定的后缀结尾|\<c:if test="${fn:endsWith(filename, '.txt')}">|
+
 
 
 
